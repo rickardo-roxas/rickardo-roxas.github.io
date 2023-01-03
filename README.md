@@ -1,3 +1,3 @@
-# e-techPT
+# Personal Website
 
-This is my input for my Empowerment Technologies performance task for the 3rd quarter.
+This is my personal website that includes my portfolio, CV, and more.
