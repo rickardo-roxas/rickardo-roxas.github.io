@@ -139,7 +139,6 @@ button:hover {
 
 /* Main */
 
-
 .paragraph {
     text-align: start;
     font-size: 16px;
@@ -369,17 +368,17 @@ button:hover {
 }
 
 .home__topics p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 @media (min-width: 701px){
     .home__topics {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -406,7 +405,7 @@ footer a{
 
 footer a:hover{
     color: #F5DF4D;
-    
+
 }
 
 .text-size12 {
