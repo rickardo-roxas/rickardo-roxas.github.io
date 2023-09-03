@@ -2,3 +2,30 @@
 @author Johan Rickardo Roxas
 @version 1.00 (2023/09/03)
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* palette */
+:root {
+    --ash-gray: hsla(97, 13%, 80%, 1);
+    --cambridge-blue: hsla(133, 18%, 59%, 1);
+    --hookers-green: hsla(165, 19%, 40%, 1);
+    --dark-slate-gray: hsla(186, 21%, 26%, 1);
+    --charcoal: hsla(201, 20%, 23%, 1);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--ash-gray);
+}
+
+/* class */
+.navLinks {
+
+} 
+
+/* elements */
+
