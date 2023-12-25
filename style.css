@@ -7,7 +7,7 @@
     --icterine: #FFFD82;
     --atomic-tangerine: #FF9B71;
     --red-crayola: #E84855;
-    --nomaral-padding: 10 20 10 20;
+    --nomaral-padding: 2% 1%;
 }
 
 /* Universal */
@@ -31,11 +31,15 @@ a {
 
 div {
     display: block;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 }
 
 /* Header */
 header, footer {
-    padding: 10px 20px 10px 20px;
+    padding: var(--nomaral-padding);
     background-color: var(--gray20);
     display: flex;
     align-items: center;
@@ -66,8 +70,6 @@ footer li {
 /* Navigation */
 nav {
     display: flex;
-    padding: 0px 20px;
-    gap: 50px;
 }
 
 /* ! Navigation Classes */
@@ -96,35 +98,38 @@ nav {
 }
 
 /* Home Classes */
-.home {
+.HomeNorth {
     color: var(--gray20);
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 10px;
+    gap: 5px;
     grid-auto-rows: auto;
+    height: 600px;
+    width: 100%;
+}
+
+.HomeNorth .container {
+    display: grid;
+    place-content: center;
+    grid-row: 1;
+    padding: var(--nomaral-padding);
 }
 
 .home-coder {
-    display: grid;
-    place-content: center;
-    grid-column: 1 ;
-    grid-row: 1;
-    text-align: right;
+    text-align: left;
+    grid-column: 1;
 }
 
 .home-designer {
-    display: grid;
-    place-content: center;
+    text-align: right;
     grid-column: 2;
-    grid-row: 1;
-    text-align: left;
 }
 
-.home h2 {
+.HomeNorth h2 {
     font-size: 4em;
     font-weight: 900;
 }
 
-.home p {
+.HomeNorth p {
     font-weight: 200;
 }
