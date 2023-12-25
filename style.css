@@ -36,7 +36,7 @@ div {
 /* Header */
 header, footer {
     padding: 10px 20px 10px 20px;
-    background-color: black;
+    background-color: var(--gray20);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,6 +57,10 @@ header li a:hover, footer li a:hover {
 footer {
     background-color: var(--baby-powder);
     color: var(--gray20);
+}
+
+footer li {
+    margin: 0 20px;
 }
 
 /* Navigation */
@@ -97,22 +101,22 @@ nav {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: auto;
 }
 
 .home-coder {
     display: grid;
     place-content: center;
-    background-color: var(--icterine);
-    grid-column: 1 / 2;
+    grid-column: 1 ;
+    grid-row: 1;
     text-align: right;
 }
 
 .home-designer {
     display: grid;
     place-content: center;
-    background-color: var(--red-crayola);
-    grid-column: 1 / 2;
+    grid-column: 2;
+    grid-row: 1;
     text-align: left;
 }
 
