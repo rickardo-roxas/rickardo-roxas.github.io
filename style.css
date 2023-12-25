@@ -1,0 +1,22 @@
+:root {
+    --gray20: #333333;
+    --white: #FAFAFA;
+    --persian-green: #1B998B;
+    --space-cadet: #2D3047;
+    --icterine: #FFFD82;
+    --atomic-tangerine: #FF9B71;
+    --red-crayola: #E84855;
+    --thin-padding: 10;
+    --normal-padding: 10 20 20 10;
+}
+
+* {
+
+}
+
+header {
+    background-color: var(--gray20);
+    padding: var(--normal-padding);
+    color: var(--white);
+}
+
