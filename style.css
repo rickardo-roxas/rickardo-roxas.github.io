@@ -1,6 +1,7 @@
 :root {
     --gray20: #333333; 
     --white: #FAFAFA;
+    --baby-powder: #F7F7F3;
     --persian-green: #1B998B;
     --space-cadet: #2D3047;
     --icterine: #FFFD82;
@@ -9,6 +10,7 @@
     --nomaral-padding: 10 20 10 20;
 }
 
+/* Universal */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -19,29 +21,49 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
 /* Header */
-
-header {
-    background-color: black;
+header, footer {
     padding: 10px 20px 10px 20px;
+    background-color: black;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
 }
 
-h1 {
-    color: var(--white);
-    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 100;
-    font-weight: 700;
-}
-
-header li {
+header li, footer li{
     display: inline;
+    text-align: center;
+}
+
+header li a:hover, footer li a:hover {
+    color: var(--icterine);
+}
+
+/* Footer */
+footer {
+    background-color: var(--baby-powder);
+    color: var(--gray20);
 }
 
 /* Navigation */
 nav {
-    
+    display: flex;
+    padding: 0px 20px;
+    gap: 50px;
 }
 
 /* ! Navigation Classes */
@@ -57,13 +79,48 @@ nav {
     justify-content: end;
 }
 
+.nav-socials i:hover {
+    color: var(--icterine);
+}
+
 .nav-links li, .nav-socials li {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10;
+    margin: 0 12px;
+    font-size: 0.9em;
     font-weight: 300;
     color: var(--white);
     list-style: none;
 }
 
+/* Home Classes */
+.home {
+    color: var(--gray20);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
 
+.home-coder {
+    display: grid;
+    place-content: center;
+    background-color: var(--icterine);
+    grid-column: 1 / 2;
+    text-align: right;
+}
 
+.home-designer {
+    display: grid;
+    place-content: center;
+    background-color: var(--red-crayola);
+    grid-column: 1 / 2;
+    text-align: left;
+}
+
+.home h2 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+.home p {
+    font-weight: 200;
+}
