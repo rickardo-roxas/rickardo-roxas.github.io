@@ -17,6 +17,7 @@
     padding: 0;
 }
 
+/* Utilities */
 html {
     scroll-behavior: smooth;
 }
@@ -29,12 +30,25 @@ a {
     text-decoration: none;
 }
 
+article {
+    width: 100%;
+}
+
 div {
     display: block;
     transition-property: width;
     transition-duration: 2s;
     transition-timing-function: linear;
     transition-delay: 1s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    padding: var(--normal-padding);
 }
 
 /* Header */
@@ -44,8 +58,13 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 70px;
+    min-width: 100%;
+    min-height: 60px;
+    max-height: 70px;
+}
+
+header {
+    z-index: 9999;
 }
 
 header li, footer li {
@@ -106,31 +125,35 @@ nav {
 
 /* ! Home North */
 .HomeNorth {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    box-sizing: border-box;
+    display: flex;
     color: var(--gray20);
-    height: 700px;
+    height: 550px;
     width: 100%;
     gap: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .HomeNorth .container {
-    display: grid;
-    place-content: center;
-    box-sizing: border-box;
-    padding: var(--normal-padding);
+    justify-self: center;
+    align-content: space-around;
+    gap: 1px;
 }
 
 .home-coder {
+    flex-grow: 2;
+    float: right;
     text-align: right;
-    grid-column: 1;
+    justify-content: center;
 }
 
 .home-designer {
+    padding: var(--normal-padding);
+    padding-left: 50px;
+    flex-grow: 1;
+    float: left;
     text-align: left;
-    grid-column: 2;
+    justify-content: center;
 }
 
 .HomeNorth h2 {
@@ -144,12 +167,24 @@ nav {
 
 /* ! Home South */
 .HomeSouth {
-    padding: var(--normal-padding);
+    background-color: var(--baby-powder);
     width: 100%;
     height: 400px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 11px 8px -10px #CCC;
+        
+}
+
+.HomeSouth div {
+    padding: var(--normal-padding);
 }
 
 .HomeSouth h3 {
+    padding-top: 50px;
+    color: var(--gray20);
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+    font-size: 0.9em;
 }
