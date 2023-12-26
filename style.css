@@ -7,7 +7,7 @@
     --icterine: #FFFD82;
     --atomic-tangerine: #FF9B71;
     --red-crayola: #E84855;
-    --nomaral-padding: 2% 1%;
+    --normal-padding: 2% 1%;
 }
 
 /* Universal */
@@ -39,7 +39,7 @@ div {
 
 /* Header */
 header, footer {
-    padding: var(--nomaral-padding);
+    padding: var(--normal-padding);
     background-color: var(--gray20);
     display: flex;
     align-items: center;
@@ -48,12 +48,12 @@ header, footer {
     height: 70px;
 }
 
-header li, footer li{
+header li, footer li {
     display: inline;
     text-align: center;
 }
 
-header li a:hover, footer li a:hover {
+header li a:hover {
     color: var(--icterine);
 }
 
@@ -61,10 +61,15 @@ header li a:hover, footer li a:hover {
 footer {
     background-color: var(--baby-powder);
     color: var(--gray20);
+    font-size: 0.8em;
 }
 
 footer li {
     margin: 0 20px;
+}
+
+footer li:hover {
+    color: black;
 }
 
 /* Navigation */
@@ -98,38 +103,53 @@ nav {
 }
 
 /* Home Classes */
+
+/* ! Home North */
 .HomeNorth {
-    color: var(--gray20);
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 5px;
-    grid-auto-rows: auto;
-    height: 600px;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    color: var(--gray20);
+    height: 700px;
     width: 100%;
+    gap: 5px;
 }
 
 .HomeNorth .container {
     display: grid;
     place-content: center;
-    grid-row: 1;
-    padding: var(--nomaral-padding);
+    box-sizing: border-box;
+    padding: var(--normal-padding);
 }
 
 .home-coder {
-    text-align: left;
+    text-align: right;
     grid-column: 1;
 }
 
 .home-designer {
-    text-align: right;
+    text-align: left;
     grid-column: 2;
 }
 
 .HomeNorth h2 {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 900;
 }
 
 .HomeNorth p {
     font-weight: 200;
+}
+
+/* ! Home South */
+.HomeSouth {
+    padding: var(--normal-padding);
+    width: 100%;
+    height: 400px;
+}
+
+.HomeSouth h3 {
+    text-align: center;
+    font-weight: 300;
 }
