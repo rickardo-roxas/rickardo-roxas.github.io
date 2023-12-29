@@ -30,10 +30,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    text-decoration: none;
-}
-
 article {
     width: 100%;
 }
@@ -87,6 +83,11 @@ footer {
     font-size: 0.8em;
 }
 
+footer a:visited {
+    text-decoration: none;
+    color: var(--gray20);
+}
+
 footer li {
     margin: 0 20px;
 }
@@ -123,6 +124,11 @@ nav {
     font-weight: 300;
     color: var(--white);
     list-style: none;
+}
+
+.nav-links a:visited {
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* Home Page */
