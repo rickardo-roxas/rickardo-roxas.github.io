@@ -83,6 +83,11 @@ footer {
     font-size: 0.8em;
 }
 
+footer a:visited {
+    text-decoration: none;
+    color: var(--gray20);
+}
+
 footer li {
     margin: 0 20px;
 }
@@ -121,7 +126,12 @@ nav {
     list-style: none;
 }
 
-/* Home Classes */
+.nav-links a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Home Page */
 
 /* ! Home North */
 .HomeNorth {
@@ -186,4 +196,11 @@ nav {
     font-weight: 500;
     letter-spacing: 0.4em;
     font-size: 0.9em;
+}
+
+/* Portfolio */
+.portfolio .container {
+    justify-self: center;
+    align-content: space-around;
+    gap: 1px;
 }
