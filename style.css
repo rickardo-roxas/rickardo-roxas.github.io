@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --rich-black: rgba(13,31,45,1);
+    --payne-gray: rgba(84,106,123,1);
+    --cadet-gray: rgba(158,163,176,1);
+    --ghost-white: rgba(247, 247, 255, 1);
+    --bittersweet: rgba(254, 95, 85, 1);
+    --light-blue: rgba(184,216,216,1);
+    background-color: var(--rich-black);
+    scroll-behavior: smooth;
+    color: var(--ghost-white);
+    font-family: 'Inter', sans-serif;
+    margin: auto 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1:hover {
+    cursor: default;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 1.25rem;
+}
+
+nav li, button {
+    font-family: 'Inter', serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 1.875rem */
+    text-transform: uppercase;
+}
+
+nav a {
+    color: var(--ghost-white);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--bittersweet);
+}
+
+nav button {
+    font-weight: 800;
+    border: none;
+    border-radius: 1.125rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background-color: var(--bittersweet);
+    color: var(--ghost-white);
+}
+
+nav button:hover {
+    background-color: rgba(254, 95, 85, 0.7);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+    width: 70%;
+}
+
+.logo img:hover {
+    height: auto;
+    width: 75%;
+}
+
+.logo h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 144%;
+    margin-left: -1.5rem;
+}
+
+footer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: var(--ghost-white, #F7F7FF);
+    font-family: Inter, serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.40625rem */
+}
+
+footer img {
+    width: 5%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0.3rem;
+}
+
+.center {
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.landing .heading {
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing p {
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144%; /* 5.76rem */
+}
+
+.landing h2 {
+    font-family: 'Montserrat', serif;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 101%;
+}
+
+.landing h3 {
+    font-family: Inter, serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.about {
+    margin-top: 5rem;
+    padding: 5rem;
+    background-color: var(--ghost-white);
+    color: var(--rich-black);
+}
