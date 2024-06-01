@@ -96,7 +96,7 @@ nav button:hover {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,7 +175,55 @@ footer img {
 
 .about {
     margin-top: 5rem;
-    padding: 5rem;
+    padding: 4rem;
     background-color: var(--ghost-white);
     color: var(--rich-black);
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem; /* 33.333% */
+    margin-bottom: 3rem;
+}
+
+.about h3 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about p {
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.bio ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.bio ul li {
+
+}
+
+.tag {
+    font-size: 0.8rem;
+    color: var(--ghost-white);
+    display: inline-flex;
+    padding: 0.375rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E0E0E0;
+    background: var(--bittersweet, #FE5F55);
 }
